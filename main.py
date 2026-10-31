@@ -12,23 +12,23 @@ app = FastAPI()
 
 
 # Allow requests from the frontend
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
-
 # app.add_middleware(
 #     CORSMiddleware,
-#     allow_origins=[
-#         "https://mintuchaudhary7.github.io"
-#     ],
-#     allow_credentials=False,
+#     allow_origins=["*"],
+#     allow_credentials=True,
 #     allow_methods=["*"],
 #     allow_headers=["*"],
 # )
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=[
+        "https://mintuchaudhary7.github.io"
+    ],
+    allow_credentials=False,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 # Request body structure
