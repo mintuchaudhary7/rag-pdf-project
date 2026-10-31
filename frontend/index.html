@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>RAG Assistant</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <header class="header">
+            <div>
+                <h1>RAG Assistant</h1>
+                <p>Ask questions about your document</p>
+            </div>
+        </header>
+
+
+        <main class="chat-container">
+
+            <div id="chatMessages" class="chat-messages">
+
+                <div class="message assistant-message">
+                    <div class="message-label">AI</div>
+
+                    <div class="message-content">
+                        Hello! Ask me anything about the uploaded document.
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div class="input-area">
+
+                <textarea
+                    id="questionInput"
+                    placeholder="Ask something about the document..."
+                    rows="1"
+                ></textarea>
+
+                <button id="sendButton">
+                    Ask
+                </button>
+
+            </div>
+
+        </main>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
