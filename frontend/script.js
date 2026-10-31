@@ -44,7 +44,7 @@ async function sendMessage() {
 //   const API_URL = "https://YOUR-RENDER-SERVICE.onrender.com";
 
   try {
-    const response = await fetch("http://127.0.0.1:8000/ask", {
+    const response = await fetch("https://rag-pdf-rag-api.onrender.com/ask", {
       method: "POST",
 
       headers: {
